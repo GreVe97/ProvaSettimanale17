@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.manina{
+    cursor: pointer !important;
+
+}
+.manina:hover{
+    text-decoration: underline !important;
+}
