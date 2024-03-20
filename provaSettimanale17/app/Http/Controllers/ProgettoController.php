@@ -16,7 +16,7 @@ class ProgettoController extends Controller
      */
     public function index()
     {
-        return view('listaProgetti',['progetti'=>Progetto::with('attivita')->with('user')->get()]);
+        return view('listaProgetti',['progetti'=>Progetto::with('attivita')->with('user')->where("user_id","=",Auth::user()->id)->get()]);
     }
 
     /**
